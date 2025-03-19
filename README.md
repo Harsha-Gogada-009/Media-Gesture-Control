@@ -1,7 +1,6 @@
 # Media-Gesture-Control
 A computer vision project using Pytorch , YOLOv8 and MediaPipe for real-time hand gesture recognition to control Media Player.
 
-# 🎯 Gesture-Based Media Player Controller
 
 This project enables users to control **VLC Media Player** using **hand gestures** in real-time. It integrates **YOLOv8** (for hand detection) and **MediaPipe** (for precise hand tracking), with **PyTorch optimizations** for improved performance.
 
