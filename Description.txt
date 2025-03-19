@@ -1,0 +1,61 @@
+GestureTraining.ipynb:
+
+    Gesture Recognition Model (PyTorch)
+    This script trains a CNN model (GestureNet) for hand gesture recognition using PyTorch. It processes images, trains a model, and saves it for future use.
+    
+    🔹 Features
+       Custom CNN architecture with 3 Conv layers
+       GPU acceleration support
+       Uses Adam optimizer & CrossEntropyLoss
+       Saves model as gesture_model.pth
+    
+    📌 How It Works
+    Loads & Preprocesses Data using ImageFolder
+    Trains CNN Model with backpropagation
+    Saves the Model for future use
+    IMPORTANT NOTE:
+          This training is used when we have customized gestures or implement gestures-training on our own , this can be seamlessly integrated into our project 
+          with custom datasets, although it requires gpu power to run on huge datasets so instead we can use pre-trained models such as YOLO or MediaPipe and finetune
+          as our requirements
+
+YOLOAllLables:
+
+    YOLOv8 Hand Detection Script (Python & OpenCV)
+    This script uses YOLOv8 (Ultralytics) for real-time hand detection via webcam. It processes frames, detects objects, and displays bounding boxes with class labels.
+    
+    🔹 Features
+       Uses YOLOv8n (lightweight model) for real-time detection
+       Live webcam feed processing using OpenCV
+       Draws bounding boxes & labels detected objects
+       Displays confidence scores for predictions
+    
+    📌 How It Works
+    Loads the YOLOv8 model (yolov8n.pt)
+    Captures webcam video feed (cv2.VideoCapture(0))
+    Passes each frame to the YOLO model for detection
+    Extracts bounding box coordinates, confidence scores, and class names
+    Draws rectangles & labels on detected objects
+    Displays output in a live window
+    Press 'q' to exit
+
+    So like this we can load a pretrained model for object classification in real time.
+
+
+MediaPipe.ipynb:
+
+    This Python script allows users to control VLC Media Player using hand gestures in real time. It leverages MediaPipe for precise hand tracking and PyAutoGUI to send keyboard commands to VLC.
+    
+    🔹 Features
+       Real-time hand tracking using MediaPipe
+       Recognizes multiple hand gestures
+       Controls VLC Media Player (Play/Pause, Volume, Seek, Fullscreen, Mute)
+       Works with a standard webcam
+    
+    📌 How It Works
+    Captures webcam video feed (cv2.VideoCapture(0))
+    Detects hand landmarks using MediaPipe
+    Identifies hand gestures (e.g., Fist, Thumbs Up, L Sign)
+    Maps gestures to VLC commands using PyAutoGUI
+    Sends keyboard shortcuts to control VLC (e.g., Play/Pause, Volume Up/Down, Seek)
+    Displays real-time hand tracking & gesture labels.
+  
